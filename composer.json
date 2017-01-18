@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "classmap": ["src/app/model", "src/app/algoritma/"],
+        "files": ["src/app/config.php"]
+    },
+    "require": {
+        "slim/slim": "^3.0",
+        "illuminate/database": "^5.3"
+    }
+
+}
