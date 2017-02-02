@@ -10,7 +10,7 @@ $app = new \Slim\App();
 
 $app->get('/lokasi[/[{id}]]', function (Request $request, Response $response, $args) {
 
-    if( count($args)){
+    if( count($args) ){
         $data = array('data' => Lokasi::where([
             ['jenis','=','Tempat Wisata'],
             ['id_lokasi','=',$args['id']]
@@ -27,6 +27,10 @@ $app->get('/hello/{name}', function (Request $request, Response $response) {
     $response->getBody()->write("Hello, $name");
 
     return $response;
+});
+
+$app->get('/', function () {
+    echo "<h2>Welcom to ruwi API</h2>";
 });
 
 
