@@ -8,10 +8,10 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 $capsule = new Capsule;
 
 $capsule->addConnection(array(
-    'driver'    => 'mysql',
+    'driver'    => 'pgsql',
     'host'      => 'localhost',
     'database'  => 'ruwi',
-    'username'  => 'root',
+    'username'  => 'postgres',
     'password'  => 'kopi',
     'charset'   => 'utf8',
     'collation' => 'utf8_general_ci',
